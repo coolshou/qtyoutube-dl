@@ -1,0 +1,19 @@
+<RCC>
+    <qresource prefix="/">
+        <file alias="add">images/Add.png</file>
+    	<file alias="down">images/ArrowDown.png</file>
+    	<file alias="up">images/ArrowUp.png</file>
+    	<file alias="copy">images/Copy.png</file>
+        <file alias="delete">images/Delete.png</file>
+    	<file alias="get">images/Get.png</file>
+    	<file alias="stop">images/Stop.png</file>
+    	<file alias="pause">images/Pause.png</file>
+    	<file alias="resume">images/Resume.png</file>
+        <file alias="qtyoutube-dl">images/qtyoutube-dl.png</file>
+        <file alias="setting">images/Setting.png</file>
+    	<file alias="trash">images/Trash.png</file>
+    	<file alias="info">images/Info.png</file>
+    	<file alias="pause">images/Pause.png</file>
+    	<file alias="resume">images/Resume.png</file>
+    </qresource>
+</RCC>
