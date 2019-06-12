@@ -5,7 +5,8 @@ PyQt5 base GUI for youtube-dl
 
 Require:
 
-​	python3
-
-​	PyQt5
+```
+python3
+PyQt5
+```
 
