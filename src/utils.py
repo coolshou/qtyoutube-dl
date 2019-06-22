@@ -40,7 +40,7 @@ _RANDOM_OBJECT = object()
 
 
 YOUTUBEDL_BIN = 'youtube-dl'
-if platform.system == 'Windows':
+if platform.system() == 'Windows':
     YOUTUBEDL_BIN += '.exe'
 
 
