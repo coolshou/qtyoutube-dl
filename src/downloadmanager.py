@@ -515,7 +515,8 @@ class DownloadManager(QThread):
         """Check if youtube-dl binary exists. If not try to download it. """
         if not os.path.exists(self._youtubedl_path()) and self.parent.update_thread is None:
             self.parent.update_thread = UpdateThread(self.opt_manager.options['youtubedl_path'], True)
-            self.parent.update_thread.join()
+            # self.parent.update_thread.join() # QThread does not have this?
+            self.parent.update_thread.wait()
             self.parent.update_thread = None
 
     def _get_worker(self):
