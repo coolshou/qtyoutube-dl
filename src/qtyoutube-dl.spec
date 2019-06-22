@@ -1,6 +1,6 @@
 # -*- mode: python -*-
 
-#require PyInstaller 3.4
+#require PyInstaller 3.4, sip 
 #python3 -m PyInstaller  --distpath ./ qtyoutube-dl.spec
 
 block_cipher = None
@@ -12,8 +12,8 @@ a = Analysis(['qtyoutube-dl.py'],
              binaries=[],
              datas=[('qtyoutube-dl.ui', '.'),('qtyoutube-dl.ico', '.'),
                     ('images/*', 'images/')],
-             hiddenimports=["PyQt5.QtWidgets","PyQt5.uic", "PyQt5.QtGui",
-                            "PyQt5.QtCore"],
+             hiddenimports=["PyQt5.QtWidgets", "PyQt5.uic", "PyQt5.QtGui",
+                            "PyQt5.QtCore", "twodict"],
              hookspath=[],
              runtime_hooks=[],
              excludes=[],
@@ -28,7 +28,7 @@ exe = EXE(pyz,
           a.zipfiles,
           a.datas,
           name='qtyoutube-dl',
-          debug=False, strip=True,
-          upx=True, console=False,
-          icon='qtyoutube-dl.ico',
-          version='qtyoutube-dl.ver')
+          debug=False, strip=False,
+          upx=False, console=False,
+          icon='src/qtyoutube-dl.ico',
+          version=None)
